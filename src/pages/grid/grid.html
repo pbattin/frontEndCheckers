@@ -1,0 +1,340 @@
+<!--
+  Generated template for the Grid page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+  <!-- <button ion-button icon-only (click)="deleteMeal(meal)" color ="danger">
+                    <ion-icon name="trash"></ion-icon>   --> 
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>grid</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  
+<ion-grid class="grid">
+
+  <ion-row class="row">
+    <ion-col width-12.5 class="bl">
+      
+    </ion-col>
+    <ion-col width-12.5 class="wh">
+         <div *ngFor="let state of board; let i = index">
+          <div ngSwitch="{{state}}">
+        <div *ngIf="i==0">
+        <img *ngSwitchCase="'BlackMan'" src="../../assets/BlackRealistic.png" (click)="hello(i+1)">
+        <img *ngSwitchCase="'WhiteMan'" src="../../assets/RedRealistic.png">
+        <img *ngSwitchCase="'K'" src="../../assets/BlackRealisticKing.png" (click)="hello(i+1)">
+
+        
+            </div>
+          </div>
+       </div>
+    </ion-col>
+     <ion-col width-12.5 class="bl"></ion-col>
+    <ion-col width-12.5 class="wh">
+         <div *ngFor="let state of board; let i = index">
+          <div ngSwitch="{{state}}">
+        <div *ngIf="i==1">
+        <img *ngSwitchCase="'BlackMan'" src="../../assets/BlackRealistic.png" (click)="hello(i+1)">>
+        <img *ngSwitchCase="'WhiteMan'" src="../../assets/RedRealistic.png" (click)="hello(i)">>
+        
+            </div>
+          </div>
+       </div>
+    </ion-col>
+     <ion-col width-12.5 class="bl"></ion-col>
+    <ion-col width-12.5 class="wh">
+         <div *ngFor="let state of board; let i = index">
+          <div ngSwitch="{{state}}">
+        <div *ngIf="i==2">
+        <img *ngSwitchCase="'BlackMan'" src="../../assets/BlackRealistic.png"(click)="hello(i)">>
+        <img *ngSwitchCase="'WhiteMan'" src="../../assets/RedRealistic.png" (click)="hello(i)">>
+        
+            </div>
+          </div>
+       </div>
+    </ion-col>
+     <ion-col width-12.5 class="bl"></ion-col>
+    <ion-col width-12.5c class="wh">
+         <div *ngFor="let state of board; let i = index" >
+          <div ngSwitch="{{state}}">
+        <div *ngIf="i==3">
+        <img *ngSwitchCase="'BlackMan'" src="../../assets/BlackRealistic.png"(click)="hello(i)">>
+        <img *ngSwitchCase="'WhiteMan'" src="../../assets/RedRealistic.png" (click)="hello(i)">>
+        
+            </div>
+          </div>
+       </div>
+    </ion-col>
+  </ion-row>
+    <ion-row class="row">
+    <ion-col width-12.5 class="wh">
+         <div *ngFor="let state of board; let i = index">
+          <div ngSwitch="{{state}}">
+        <div *ngIf="i==4">
+        <img *ngSwitchCase="'BlackMan'" src="../../assets/BlackRealistic.png" (click)="hello(i)">>
+        <img *ngSwitchCase="'WhiteMan'" src="../../assets/RedRealistic.png" (click)="hello(i)">>
+        
+            </div>
+          </div>
+       </div>
+    </ion-col>
+    <ion-col width-12.5 class="bl"></ion-col>
+     <ion-col width-12.5 class="wh">
+          <div *ngFor="let state of board; let i = index">
+          <div ngSwitch="{{state}}">
+        <div *ngIf="i==5">
+        <img *ngSwitchCase="'BlackMan'" src="../../assets/BlackRealistic.png"(click)="hello(i)">>
+        <img *ngSwitchCase="'WhiteMan'" src="../../assets/RedRealistic.png"(click)="hello(i)">>
+        
+            </div>
+          </div>
+       </div>
+     </ion-col>
+    <ion-col width-12.5 class="bl"></ion-col>
+     <ion-col width-12.5 class="wh">
+          <div *ngFor="let state of board; let i = index">
+          <div ngSwitch="{{state}}">
+        <div *ngIf="i==6">
+        <img *ngSwitchCase="'BlackMan'" src="../../assets/BlackRealistic.png" (click)="hello(i)">>
+        <img *ngSwitchCase="'WhiteMan'" src="../../assets/RedRealistic.png" (click)="hello(i)">>
+        
+            </div>
+          </div>
+       </div>
+     </ion-col>
+    <ion-col width-12.5 class="bl"></ion-col>
+     <ion-col width-12.5 class="wh">   <div *ngFor="let state of board; let i = index">
+          <div ngSwitch="{{state}}">
+        <div *ngIf="i==7">
+        <img *ngSwitchCase="'BlackMan'" src="../../assets/BlackRealistic.png"(click)="hello(i)">>
+        <img *ngSwitchCase="'WhiteMan'" src="../../assets/RedRealistic.png"(click)="hello(i)">>
+        
+            </div>
+          </div>
+       </div></ion-col>
+    <ion-col width-12.5 class="bl"></ion-col>
+  </ion-row>
+    <ion-row class="row">
+    <ion-col width-12.5 class="bl"></ion-col>
+    <ion-col width-12.5 class="wh">
+         <div *ngFor="let state of board; let i = index">
+          <div ngSwitch="{{state}}">
+        <div *ngIf="i==8">
+        <img *ngSwitchCase="'BlackMan'" src="../../assets/BlackRealistic.png"(click)="hello(i)">>
+        <img *ngSwitchCase="'WhiteMan'" src="../../assets/RedRealistic.png"(click)="hello(i)">>
+        
+            </div>
+          </div>
+       </div>
+    </ion-col>
+     <ion-col width-12.5 class="bl"></ion-col>
+    <ion-col width-12.5 class="wh">
+         <div *ngFor="let state of board; let i = index">
+          <div ngSwitch="{{state}}">
+        <div *ngIf="i==9">
+        <img *ngSwitchCase="'BlackMan'" src="../../assets/BlackRealistic.png"(click)="hello(i)">>
+        <img *ngSwitchCase="'WhiteMan'" src="../../assets/RedRealistic.png"(click)="hello(i)">>
+        
+            </div>
+          </div>
+       </div>
+    </ion-col>
+     <ion-col width-12.5 class="bl"></ion-col>
+    <ion-col width-12.5 class="wh">
+         <div *ngFor="let state of board; let i = index">
+          <div ngSwitch="{{state}}">
+        <div *ngIf="i==10">
+        <img *ngSwitchCase="'BlackMan'" src="../../assets/BlackRealistic.png"(click)="hello(i)">>
+        <img *ngSwitchCase="'WhiteMan'" src="../../assets/RedRealistic.png"(click)="hello(i)">>
+        
+            </div>
+          </div>
+       </div>
+    </ion-col>
+     <ion-col width-12.5 class="bl"></ion-col>
+    <ion-col width-12.5c class="wh">
+         <div *ngFor="let state of board; let i = index">
+          <div ngSwitch="{{state}}">
+        <div *ngIf="i==11">
+        <img *ngSwitchCase="'BlackMan'" src="../../assets/BlackRealistic.png"(click)="hello(i)">>
+        <img *ngSwitchCase="'WhiteMan'" src="../../assets/RedRealistic.png"(click)="hello(i)">>
+        
+            </div>
+          </div>
+       </div>
+    </ion-col>
+  </ion-row>
+    <ion-row class="row">
+    <ion-col width-12.5 class="wh"></ion-col>
+    <ion-col width-12.5 class="bl"></ion-col>
+     <ion-col width-12.5 class="wh"></ion-col>
+    <ion-col width-12.5 class="bl"></ion-col>
+     <ion-col width-12.5 class="wh"></ion-col>
+    <ion-col width-12.5 class="bl"></ion-col>
+     <ion-col width-12.5 class="wh"></ion-col>
+    <ion-col width-12.5 class="bl"></ion-col>
+  </ion-row>
+    <ion-row class="row">
+    <ion-col width-12.5 class="bl"></ion-col>
+    <ion-col width-12.5 class="wh"></ion-col>
+     <ion-col width-12.5 class="bl"></ion-col>
+    <ion-col width-12.5 class="wh"></ion-col>
+     <ion-col width-12.5 class="bl"></ion-col>
+    <ion-col width-12.5 class="wh"></ion-col>
+     <ion-col width-12.5 class="bl"></ion-col>
+    <ion-col width-12.5c class="wh"></ion-col>
+  </ion-row>
+    <ion-row class="row">
+    <ion-col width-12.5 class="wh">
+       <div *ngFor="let state of board; let i = index">
+          <div ngSwitch="{{state}}">
+        <div *ngIf="i==23">
+        <img *ngSwitchCase="'BlackMan'" src="../../assets/BlackRealistic.png">
+        <img *ngSwitchCase="'WhiteMan'" src="../../assets/RedRealistic.png">
+            </div>
+          </div>
+       </div>
+    </ion-col>
+    <ion-col width-12.5 class="bl"></ion-col>
+     <ion-col width-12.5 class="wh">
+       <div *ngFor="let state of board; let i = index">
+          <div ngSwitch="{{state}}">
+        <div *ngIf="i==22">
+        <img *ngSwitchCase="'BlackMan'" src="../../assets/BlackRealistic.png">
+        <img *ngSwitchCase="'WhiteMan'" src="../../assets/RedRealistic.png">
+            </div>
+          </div>
+       </div>
+     </ion-col>
+    <ion-col width-12.5 class="bl"></ion-col>
+     <ion-col width-12.5 class="wh">
+       <div *ngFor="let state of board; let i = index">
+          <div ngSwitch="{{state}}">
+        <div *ngIf="i==21">
+        <img *ngSwitchCase="'BlackMan'" src="../../assets/BlackRealistic.png">
+        <img *ngSwitchCase="'WhiteMan'" src="../../assets/RedRealistic.png">
+            </div>
+          </div>
+       </div>
+     </ion-col>
+    <ion-col width-12.5 class="bl"></ion-col>
+     <ion-col width-12.5 class="wh">
+       <div *ngFor="let state of board; let i = index">
+          <div ngSwitch="{{state}}">
+        <div *ngIf="i==20">
+        <img *ngSwitchCase="'BlackMan'" src="../../assets/BlackRealistic.png">
+        <img *ngSwitchCase="'WhiteMan'" src="../../assets/RedRealistic.png">
+            </div>
+          </div>
+       </div>
+     </ion-col>
+    <ion-col width-12.5 class="bl"></ion-col>
+  </ion-row>
+    <ion-row class="row">
+    <ion-col width-12.5 class="bl"></ion-col>
+    <ion-col width-12.5 class="wh">
+       <div *ngFor="let state of board; let i = index">
+          <div ngSwitch="{{state}}">
+        <div *ngIf="i==27">
+        <img *ngSwitchCase="'BlackMan'" src="../../assets/BlackRealistic.png">
+        <img *ngSwitchCase="'WhiteMan'" src="../../assets/RedRealistic.png">
+            </div>
+          </div>
+       </div>
+    </ion-col>
+     <ion-col width-12.5 class="bl"></ion-col>
+    <ion-col width-12.5 class="wh">
+       <div *ngFor="let state of board; let i = index">
+          <div ngSwitch="{{state}}">
+        <div *ngIf="i==26">
+        <img *ngSwitchCase="'BlackMan'" src="../../assets/BlackRealistic.png">
+        <img *ngSwitchCase="'WhiteMan'" src="../../assets/RedRealistic.png">
+            </div>
+          </div>
+       </div>
+    </ion-col>
+     <ion-col width-12.5 class="bl"></ion-col>
+    <ion-col width-12.5 class="wh">
+        <div *ngFor="let state of board; let i = index">
+          <div ngSwitch="{{state}}">
+        <div *ngIf="i==25">
+        <img *ngSwitchCase="'BlackMan'" src="../../assets/BlackRealistic.png">
+        <img *ngSwitchCase="'WhiteMan'" src="../../assets/RedRealistic.png">
+            </div>
+          </div>
+       </div>
+    </ion-col>
+     <ion-col width-12.5 class="bl"></ion-col>
+    <ion-col width-12.5c class="wh">
+       <div *ngFor="let state of board; let i = index">
+          <div ngSwitch="{{state}}">
+        <div *ngIf="i==24">
+        <img *ngSwitchCase="'BlackMan'" src="../../assets/BlackRealistic.png">
+        <img *ngSwitchCase="'WhiteMan'" src="../../assets/RedRealistic.png">
+            </div>
+          </div>
+       </div>
+    </ion-col>
+  </ion-row>
+    <ion-row class="row">
+     <ion-col width-12.5 class="wh">
+       <div *ngFor="let state of board; let i = index">
+          <div ngSwitch="{{state}}">
+        <div *ngIf="i==31">
+        <img *ngSwitchCase="'BlackMan'" src="../../assets/BlackRealistic.png">
+        <img *ngSwitchCase="'WhiteMan'" src="../../assets/RedRealistic.png">
+            </div>
+          </div>
+       </div>
+     </ion-col>
+    <ion-col width-12.5 class="bl"></ion-col>
+     <ion-col width-12.5 class="wh">
+       <div *ngFor="let state of board; let i = index">
+          <div ngSwitch="{{state}}">
+        <div *ngIf="i==30">
+        <img *ngSwitchCase="'BlackMan'" src="../../assets/BlackRealistic.png">
+        <img *ngSwitchCase="'WhiteMan'" src="../../assets/RedRealistic.png">
+            </div>
+          </div>
+       </div>
+     </ion-col>
+    <ion-col width-12.5 class="bl"></ion-col>
+     <ion-col width-12.5 class="wh">
+         <div *ngFor="let state of board; let i = index">
+          <div ngSwitch="{{state}}">
+        <div *ngIf="i==29">
+        <img *ngSwitchCase="'BlackMan'" src="../../assets/BlackRealistic.png">
+        <img *ngSwitchCase="'WhiteMan'" src="../../assets/RedRealistic.png">
+            </div>
+          </div>
+       </div>
+     </ion-col>
+    <ion-col width-12.5 class="bl"></ion-col>
+     <ion-col width-12.5 class="wh">
+         <div *ngFor="let state of board; let i = index">
+          <div ngSwitch="{{state}}">
+        <div *ngIf="i==28">
+        <img *ngSwitchCase="'BlackMan'" src="../../assets/BlackRealistic.png">
+        <img *ngSwitchCase="'WhiteMan'" src="../../assets/RedRealistic.png">
+            </div>
+          </div>
+       </div>
+     </ion-col>
+    <ion-col width-12.5 class="bl"></ion-col>
+  </ion-row>
+
+</ion-grid>
+
+
+
+
+</ion-content>
