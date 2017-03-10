@@ -16,6 +16,7 @@ import 'rxjs/add/operator/map';
        name: string;
        constructor(thisname : string){
         this.name = thisname;
+        
        }
    }
 export class jsonInterface {
@@ -70,7 +71,7 @@ export class GridPage {
   board: any[]; 
   constructor(public navCtrl: NavController, public navParams: NavParams, public http: Http, public moveService: MoveService) {
 
-    this.board = [
+   [ this.board = [
       'BlackMan',
       'BlackMan',
       'BlackMan',
@@ -102,9 +103,10 @@ export class GridPage {
       'WhiteMan',
       'WhiteMan',
       'WhiteMan',
-      'WhiteMan'   
+      'WhiteMan',
+         
 
-    ]
+    ]]
   } 
 
 
@@ -113,6 +115,8 @@ export class GridPage {
      x.setAttribute("src", "../../assets/BlackManedChecker.png");
       document.body.appendChild(x);
     }
+
+    
 
     hello(position: number): any {
 
@@ -132,8 +136,10 @@ export class GridPage {
       payload.board[counter] = new position(this.board[counter]); 
     });
    //console.log(JSON.stringify(payload));
+   
      this.moveService.move(JSON.stringify(payload));
 }
+
 
   
 }

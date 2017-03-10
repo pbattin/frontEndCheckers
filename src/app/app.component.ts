@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
-
+import {PostComponent} from './post/post.component'
 import { TabsPage } from '../pages/tabs/tabs';
 import { GameBoardPage } from '../pages/game-board/game-board';
 import { GridPage } from '../pages/grid/grid';
@@ -20,4 +20,6 @@ export class MyApp {
       Splashscreen.hide();
     });
   }
+
+
 }
